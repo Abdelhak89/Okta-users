@@ -18,16 +18,18 @@ def get_secret(secret_name, region_name):
         return json.loads(response['SecretBinary'])
 
 # --- CONFIGURATION ---
-SECRET_NAME = "Prod/OKTA/DailyUsersDump/oktaApi"  # Remplace avec le nom ou l'ARN correct du secret
-REGION_NAME = "us-east-1"   # Remplace par la région où se trouve le secret
+secret_name = "Prod/OKTA/DailyUsersDump/oktaApi"  # Remplace avec le nom ou l'ARN correct du secret
+region_name = "eu-west-1"   # Remplace par la région où se trouve le secret
 
 # Récupération du secret
-secrets = get_secret(SECRET_NAME, REGION_NAME)
+secrets = get_secret(secret_name, region_name)
 print("Secret récupéré :", secrets)
 
 # Extraction des valeurs du secret
+# Extraction des valeurs du secret
 okta_domain = secrets.get("base_url")
-okta_token = secrets.get("Prod/OKTA/DailyUsersDump/oktaApi")
+okta_token = secrets.get("ssws_token")
+
 
 if not okta_domain or not okta_token:
     raise ValueError("Les informations 'okta_token' et/ou 'okta_domain' ne sont pas présentes dans le secret.")

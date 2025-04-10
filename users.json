@@ -1,0 +1,42 @@
+[
+    {
+        "id": "00uo6wl3g3nCmCAEw5d7",
+        "status": "RECOVERY",
+        "created": "2025-04-08T06:22:44.000Z",
+        "activated": null,
+        "statusChanged": "2025-04-08T08:54:25.000Z",
+        "lastLogin": "2025-04-08T08:54:27.000Z",
+        "lastUpdated": "2025-04-08T08:54:25.000Z",
+        "passwordChanged": "2025-04-08T08:54:27.000Z",
+        "type": {
+            "id": "otyo6wl3cepxDBfYg5d7"
+        },
+        "profile": {
+            "firstName": "Abdelhak89",
+            "lastName": "Abdelhak89",
+            "mobilePhone": null,
+            "secondEmail": null,
+            "login": "Abdelhak89@github.oktaidp",
+            "email": "abdelhak_esshih@outlook.fr"
+        },
+        "credentials": {
+            "password": {},
+            "emails": [
+                {
+                    "value": "abdelhak_esshih@outlook.fr",
+                    "status": "VERIFIED",
+                    "type": "PRIMARY"
+                }
+            ],
+            "provider": {
+                "type": "OKTA",
+                "name": "OKTA"
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "https://dev-72973622.okta.com/api/v1/users/00uo6wl3g3nCmCAEw5d7"
+            }
+        }
+    }
+]
